@@ -43,7 +43,7 @@ int main()
 	std::thread t2(output_py, std::ref(tree), num);
 	t1.join();
 	t2.join();
-	output_gv(tree);
+	//output_gv(tree);
 	//output_py(tree, num);
 	std::cout << tree.goal_nodes_.size() << std::endl;
 	std::cout << sizeof(Node) << std::endl;
